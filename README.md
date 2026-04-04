@@ -48,11 +48,11 @@ An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 - Run the application
 
 ## Project Structure
-Models — Expense entity and data annotations
-Data — FinanceAppContext (EF Core DbContext)
-Data Services — IExpensesService interface and ExpensesService implementation
-Controllers — ExpensesController handling Index and Create
-Views/Expenses — Index.cshtml (expense table), Create.cshtml (add form)
+- Models — Expense entity and data annotations
+- Data — FinanceAppContext (EF Core DbContext)
+- Data Services — IExpensesService interface and ExpensesService implementation
+- Controllers — ExpensesController handling Index and Create
+- Views/Expenses — Index.cshtml (expense table), Create.cshtml (add form)
 
 ## Disclaimer
 SpendSmart is a personal portfolio project created for educational and demonstration purposes only. It is intended to showcase technical skills in software development, design, and data handling.
