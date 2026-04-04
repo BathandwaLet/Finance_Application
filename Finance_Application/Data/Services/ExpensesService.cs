@@ -11,7 +11,6 @@ public class ExpensesService : IExpensesService
     {
         _context = context;
     }
-    public ExpensesService(){}
         
     public async Task<IEnumerable<Expense>> GetAll()
     {
@@ -22,6 +21,6 @@ public class ExpensesService : IExpensesService
     public async Task Add(Expense expense)
     {
         _context.Expenses.Add(expense);
-        _context.SaveChangesAsync();
+       await _context.SaveChangesAsync();
     }
 }
