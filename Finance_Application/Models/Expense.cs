@@ -16,5 +16,5 @@ public class Expense
     [Required]
     public string Category { get; set; } = null!;
     
-    public DateTime Date { get; set; } = DateTime.Now;
+    public DateTime Date { get; set; } = DateTime.UtcNow;
 }
