@@ -10,6 +10,7 @@ builder.Services.AddDbContext<FinanceAppContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnectionString")));
 
 builder.Services.AddScoped<IExpensesService, ExpensesService>();
+builder.Services.AddScoped<IIncomeService, IncomeService>();
 
 var app = builder.Build();
 
