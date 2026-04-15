@@ -8,4 +8,6 @@ public class FinanceAppContext : DbContext
     public FinanceAppContext(DbContextOptions<FinanceAppContext> options):base(options) { }
     
     public DbSet<Expense> Expenses { get; set; }
+    
+    public DbSet<Income> Income { get; set; }
 }
