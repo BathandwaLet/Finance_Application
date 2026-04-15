@@ -24,6 +24,16 @@ public class IncomeService : IIncomeService
         await _context.SaveChangesAsync();
     }
 
+    public async Task Delete(int id)
+    {
+        var income = await _context.Income.FindAsync(id);
+        if (income != null)
+        {
+            _context.Income.Remove(income);
+            await _context.SaveChangesAsync();
+        }
+    }
+
     public IQueryable GetChartData()
     {
         var data = _context.Income.GroupBy(e => e.Category)
