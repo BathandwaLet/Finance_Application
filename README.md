@@ -58,8 +58,14 @@ An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 SpendSmart is a personal portfolio project created for educational and demonstration purposes only. It is intended to showcase technical skills in software development, design, and data handling.
 
 ## Screenshots
--![Expense List](Finance_Application/Screenshots/MyMoney_ExpenseIndexPage.png)
--![Add Expense](Finance_Application/Screenshots/MyMoney_ExpenseCreatePage.png)
+- Expense page
+![Expense List](Finance_Application/Screenshots/SpendSmart_ExpenseIndexPage.png)
+
+- Add Expense Page
+![Add Expense](Finance_Application/Screenshots/MyMoney_ExpenseCreatePage.png)
+
+- Income Page
+-![Expense List](Finance_Application/Screenshots/SpendSmart_IncomeIndexPage.png)
 
 ## AUTHOR
 **Bathandwa L Maphumulo**  
