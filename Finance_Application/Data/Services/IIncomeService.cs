@@ -9,4 +9,6 @@ public interface IIncomeService
     Task Add(Income income);
 
     IQueryable GetChartData();
+
+    Task Delete(int Id);
 }
