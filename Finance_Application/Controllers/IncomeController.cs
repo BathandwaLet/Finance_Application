@@ -38,6 +38,13 @@ public class IncomeController : Controller
         return View();
     }
 
+    [HttpPost]
+    public async Task<IActionResult> Delete(int id)
+    {
+        await _incomeService.Delete(id);
+        return RedirectToAction("Index");
+    }
+
     public IActionResult GetChart()
     {
         var data = _incomeService.GetChartData();

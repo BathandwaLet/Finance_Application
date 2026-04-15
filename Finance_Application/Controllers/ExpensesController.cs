@@ -37,6 +37,13 @@ public class ExpensesController : Controller
         }
         return View();
     }
+    
+    [HttpPost]
+    public async Task<IActionResult> Delete(int id)
+    {
+        await _expensesService.Delete(id);
+        return RedirectToAction("Index");
+    }
 
     public IActionResult GetChart()
     {
