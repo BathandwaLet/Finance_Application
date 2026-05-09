@@ -23,6 +23,16 @@ public class IncomeController : Controller
 
     public IActionResult Create()
     {
+        ViewBag.Categories = new List<string>
+        {
+            "Salary/Wages",
+            "Stipend",
+            "Grant",
+            "Gambling/Lottery Winnings",
+            "Interest",
+            "Dividends",
+            "Other"
+        };
         return View();
     }
     
