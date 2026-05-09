@@ -34,6 +34,16 @@ public class IncomeService : IIncomeService
         }
     }
 
+    public async Task Edit(int id)
+    {
+        var income = await _context.Income.FindAsync(id);
+        if (income != null)
+        {
+            _context.Update(income);
+            await _context.SaveChangesAsync();
+        }
+    }
+
     public IQueryable GetChartData()
     {
         var data = _context.Income.GroupBy(e => e.Category)
