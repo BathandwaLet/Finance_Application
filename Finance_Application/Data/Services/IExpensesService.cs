@@ -9,6 +9,8 @@ public interface IExpensesService
     Task Add(Expense expense);
     
     Task Delete(int id);
+    
+    Task Edit(int id);
 
     IQueryable GetChartData();
 }
