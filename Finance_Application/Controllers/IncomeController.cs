@@ -45,6 +45,17 @@ public class IncomeController : Controller
             
             return RedirectToAction("Index");
         }
+        
+        ViewBag.Categories = new List<string>
+        {
+            "Salary/Wages",
+            "Stipend",
+            "Grant",
+            "Gambling/Lottery Winnings",
+            "Interest",
+            "Dividends",
+            "Other"
+        };
         return View();
     }
 
