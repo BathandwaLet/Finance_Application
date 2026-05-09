@@ -22,6 +22,10 @@
                 <td>@item.Category</td>
                 <td>@item.Date.ToString("yyyy-MM-dd")</td>
                 <td>
+                    <form asp-action="Edit" method="put">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" class="btn btn-danger btn-sm">Edit</button>
+                    </form>
                     <form asp-action="Delete" method="post">
                         <input type="hidden" name="id" value="@item.Id" />
                         <button type="submit" class="btn btn-danger btn-sm">Delete</button>
