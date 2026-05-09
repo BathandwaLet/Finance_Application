@@ -1,5 +1,6 @@
 @model Finance_Application.Models.Expense
 
+<button class="back-btn">← Back to Expenses</button>
 <div>
     <h2>Add Expense</h2>
     <form asp-action="Create" method="post">
@@ -13,7 +14,13 @@
         </div>
         <div>
             <label asp-for="Category" class="form-label"></label>
-            <input asp-for="Category" class="form-control"/>
+            <select asp-for="Category" class="form-control">
+                <option value="">-- Select Category --</option>
+                @foreach (var category in ViewBag.Categories)
+                {
+                    <option value="@category">@category</option>
+                } 
+            </select>
         </div>
         <button type="submit" class="btn btn-primary" >Add Expense</button>
     </form>
