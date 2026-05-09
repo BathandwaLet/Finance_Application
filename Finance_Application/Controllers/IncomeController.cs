@@ -21,6 +21,7 @@ public class IncomeController : Controller
         return View(income);
     }
 
+    //POST
     public IActionResult Create()
     {
         ViewBag.Categories = new List<string>
@@ -63,6 +64,13 @@ public class IncomeController : Controller
     public async Task<IActionResult> Delete(int id)
     {
         await _incomeService.Delete(id);
+        return RedirectToAction("Index");
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Edit(int id)
+    {
+        await _incomeService.Edit(id);
         return RedirectToAction("Index");
     }
 
