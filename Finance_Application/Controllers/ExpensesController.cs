@@ -23,6 +23,18 @@ public class ExpensesController : Controller
 
     public IActionResult Create()
     {
+        ViewBag.Categories = new List<string>
+        {
+            "Groceries",
+            "Rent",
+            "Entertainment",
+            "Utilities",
+            "Healthcare",
+            "Shopping",
+            "Transport / Fuel",
+            "Education",
+            "Other"
+        };
         return View();
     }
     
