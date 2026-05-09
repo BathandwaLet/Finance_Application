@@ -35,6 +35,19 @@ public class ExpensesController : Controller
             
             return RedirectToAction("Index");
         }
+
+        ViewBag.Categories = new List<string>
+        {
+            "Groceries",
+            "Rent",
+            "Entertainment",
+            "Utilities",
+            "Healthcare",
+            "Shopping",
+            "Transport / Fuel",
+            "Education",
+            "Other"
+        };
         return View();
     }
     
