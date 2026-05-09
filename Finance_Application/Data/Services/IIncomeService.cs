@@ -11,4 +11,6 @@ public interface IIncomeService
     IQueryable GetChartData();
 
     Task Delete(int id);
+    
+    Task Edit(int id);
 }
