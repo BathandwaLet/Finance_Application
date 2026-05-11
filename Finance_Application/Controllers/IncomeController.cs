@@ -67,11 +67,34 @@ public class IncomeController : Controller
         return RedirectToAction("Index");
     }
 
-    [HttpPut("{id}")]
+    [HttpPost]
+    public async Task<IActionResult> Edit(Income income)
+    {
+        if (ModelState.IsValid)
+        {
+            await _incomeService.Update(income);
+            return RedirectToAction("Index");
+        }
+        return View(income);
+    }
+    
+    [HttpGet]
     public async Task<IActionResult> Edit(int id)
     {
-        await _incomeService.Edit(id);
-        return RedirectToAction("Index");
+        var income = await _incomeService.GetById(id);
+        
+        ViewBag.Categories = new List<string>
+        {
+            "Salary/Wages",
+            "Stipend",
+            "Grant",
+            "Gambling/Lottery Winnings",
+            "Interest",
+            "Dividends",
+            "Other"
+        };
+        
+        return View(income);
     }
 
     public IActionResult GetChart()
