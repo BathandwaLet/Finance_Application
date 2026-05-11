@@ -17,10 +17,7 @@ An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 - Date defaults to current date on creation
 
 ## Planned Features/Roadmap
-- Add income.
 - Add savings.
-- Edit and delete expenses
-- Category dropdown with predefined options
 - Validation error messages on form
 - Filter by month/year
 - Budget module with monthly cap per category
@@ -42,7 +39,7 @@ An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 
 ## How to Run
 - Clone repo
-- Open in any IDE that supports C#/ ASP.NET application (Visual Studio, Rider).
+- Open in any IDE that supports C#/ ASP.NET application (Visual Studio, Rider etc).
 - Set connection string in appsettings.json
 - Run EF migrations
 - Run the application
@@ -59,13 +56,19 @@ SpendSmart is a personal portfolio project created for educational and demonstra
 
 ## Screenshots
 - Expense page
-![Expense List](Finance_Application/Screenshots/SpendSmart_ExpenseIndexPage.png)
+![Expense List](Finance_Application/Screenshots/SpendSmartExpenseIndex.png)
 
 - Add Expense Page
-![Add Expense](Finance_Application/Screenshots/MyMoney_ExpenseCreatePage.png)
+![Add Expense](Finance_Application/Screenshots/SpendSmartAddExpenses.png)
 
 - Income Page
--![Expense List](Finance_Application/Screenshots/SpendSmart_IncomeIndexPage.png)
+![Income List](Finance_Application/Screenshots/SpendSmartIncomeIndex.png)
+
+- Add Income Page
+![Income_List](Finance_Application/Screenshots/SpendSmartAddIncome.png)
+
+- Edit Income Page
+![Income_List](Finance_Application/Screenshots/SpendSmartEditIncome.png)
 
 ## AUTHOR
 **Bathandwa L Maphumulo**  
