@@ -12,7 +12,7 @@ public interface IExpensesService
     
     Task<Income> GetById(int id);
     
-    Task Update(Income income);
+    Task Update(Expense expense);
 
     IQueryable GetChartData();
 }
