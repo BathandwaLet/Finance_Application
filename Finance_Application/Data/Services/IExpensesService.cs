@@ -10,7 +10,9 @@ public interface IExpensesService
     
     Task Delete(int id);
     
-    Task Edit(int id);
+    Task<Income> GetById(int id);
+    
+    Task Update(Income income);
 
     IQueryable GetChartData();
 }
