@@ -80,6 +80,26 @@ public class ExpensesController : Controller
         }
         return View(expense);
     }
+    
+    public async Task<IActionResult> Edit(int id)
+    {
+        var expense = await _expensesService.GetById(id);
+        
+        ViewBag.Categories = new List<string>
+        {
+            "Groceries",
+            "Rent",
+            "Entertainment",
+            "Utilities",
+            "Healthcare",
+            "Shopping",
+            "Transport / Fuel",
+            "Education",
+            "Other"
+        };
+        
+        return View(expense);
+    }
 
     public IActionResult GetChart()
     {
