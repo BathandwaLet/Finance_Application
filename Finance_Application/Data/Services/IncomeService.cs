@@ -34,14 +34,15 @@ public class IncomeService : IIncomeService
         }
     }
 
-    public async Task Edit(int id)
+    public async Task Update(Income income)
     {
-        var income = await _context.Income.FindAsync(id);
-        if (income != null)
-        {
-            _context.Update(income);
-            await _context.SaveChangesAsync();
-        }
+        _context.Income.Update(income);
+        await _context.SaveChangesAsync();
+    }
+    
+    public async Task<Income> GetById(int id)
+    {
+        return await _context.Income.FindAsync(id);
     }
 
     public IQueryable GetChartData()
