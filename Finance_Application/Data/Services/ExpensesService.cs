@@ -34,14 +34,14 @@ public class ExpensesService : IExpensesService
         }
     }
     
-    public async Task Edit(int id)
+    public async Task Update(Expense expense)
     {
-        var expense = await _context.Expenses.FindAsync(id);
-        if (expense != null)
-        {
-            _context.Update(expense);
-            await _context.SaveChangesAsync();
-        }
+        _context.Expenses.Update(expense);
+        await _context.SaveChangesAsync();
+    }
+    public async Task<Expense> GetById(int id)
+    {
+        return await _context.Expenses.FindAsync(id);
     }
 
     public IQueryable GetChartData()
