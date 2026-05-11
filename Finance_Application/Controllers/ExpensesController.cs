@@ -81,6 +81,7 @@ public class ExpensesController : Controller
         return View(expense);
     }
     
+    [HttpGet]
     public async Task<IActionResult> Edit(int id)
     {
         var expense = await _expensesService.GetById(id);
