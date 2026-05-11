@@ -10,7 +10,7 @@ public interface IExpensesService
     
     Task Delete(int id);
     
-    Task<Income> GetById(int id);
+    Task<Expense> GetById(int id);
     
     Task Update(Expense expense);
 
