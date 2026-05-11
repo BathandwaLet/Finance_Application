@@ -70,11 +70,15 @@ public class ExpensesController : Controller
         return RedirectToAction("Index");
     }
     
-    [HttpPut("{id}")]
-    public async Task<IActionResult> Edit(int id)
+    [HttpPost]
+    public async Task<IActionResult> Edit(Expense expense)
     {
-        await _expensesService.Edit(id);
-        return RedirectToAction("Index");
+        if (ModelState.IsValid)
+        {
+            await _expensesService.Update(expense);
+            return RedirectToAction("Index");
+        }
+        return View(expense);
     }
 
     public IActionResult GetChart()
