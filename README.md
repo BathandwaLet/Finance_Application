@@ -2,7 +2,8 @@
 
 ## Project Title
 **CoinTrace**
-An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
+An ASP.NET Core MVC and PostgreSQL application that tracks personal finances. This was based on the 
+ASP.NET Core MVC Course for Beginners (.NET 9) link:https://youtu.be/RWXKysImabs?si=vrDNZxpiIHtO_omO.
 
 ## Project Description
 - This application tracks and categorises expenses and provides a visual chart to view expenses.
