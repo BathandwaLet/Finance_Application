@@ -1,7 +1,7 @@
-# SpendSmart
+# CoinTrace
 
 ## Project Title
-**SpendSmart**
+**CoinTrace**
 An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 
 ## Project Description
@@ -52,7 +52,7 @@ An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 - Views/Expenses — Index.cshtml (expense table), Create.cshtml (add form)
 
 ## Disclaimer
-SpendSmart is a personal portfolio project created for educational and demonstration purposes only. It is intended to showcase technical skills in software development, design, and data handling.
+CoinTrace is a personal portfolio project created for educational and demonstration purposes only. It is intended to showcase technical skills in software development, design, and data handling.
 
 ## Screenshots
 - Expense page
