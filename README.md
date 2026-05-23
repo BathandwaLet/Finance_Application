@@ -1,8 +1,9 @@
-# SpendSmart
+# CoinTrace
 
 ## Project Title
-**SpendSmart**
-An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
+**CoinTrace**
+An ASP.NET Core MVC and PostgreSQL application that tracks personal finances. This was based on the 
+ASP.NET Core MVC Course for Beginners (.NET 9) link:https://youtu.be/RWXKysImabs?si=vrDNZxpiIHtO_omO.
 
 ## Project Description
 - This application tracks and categorises expenses and provides a visual chart to view expenses.
@@ -17,10 +18,7 @@ An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 - Date defaults to current date on creation
 
 ## Planned Features/Roadmap
-- Add income.
 - Add savings.
-- Edit and delete expenses
-- Category dropdown with predefined options
 - Validation error messages on form
 - Filter by month/year
 - Budget module with monthly cap per category
@@ -42,7 +40,7 @@ An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 
 ## How to Run
 - Clone repo
-- Open in any IDE that supports C#/ ASP.NET application (Visual Studio, Rider).
+- Open in any IDE that supports C#/ ASP.NET application (Visual Studio, Rider etc).
 - Set connection string in appsettings.json
 - Run EF migrations
 - Run the application
@@ -55,17 +53,23 @@ An ASP.NET Core MVC and PostgreSQL application that tracks personal finances.
 - Views/Expenses — Index.cshtml (expense table), Create.cshtml (add form)
 
 ## Disclaimer
-SpendSmart is a personal portfolio project created for educational and demonstration purposes only. It is intended to showcase technical skills in software development, design, and data handling.
+CoinTrace is a personal portfolio project created for educational and demonstration purposes only. It is intended to showcase technical skills in software development, design, and data handling.
 
 ## Screenshots
 - Expense page
-![Expense List](Finance_Application/Screenshots/SpendSmart_ExpenseIndexPage.png)
+![Expense List](Finance_Application/Screenshots/SpendSmartExpenseIndex.png)
 
 - Add Expense Page
-![Add Expense](Finance_Application/Screenshots/MyMoney_ExpenseCreatePage.png)
+![Add Expense](Finance_Application/Screenshots/SpendSmartAddExpenses.png)
 
 - Income Page
--![Expense List](Finance_Application/Screenshots/SpendSmart_IncomeIndexPage.png)
+![Income List](Finance_Application/Screenshots/SpendSmartIncomeIndex.png)
+
+- Add Income Page
+![Income_List](Finance_Application/Screenshots/SpendSmartAddIncome.png)
+
+- Edit Income Page
+![Income_List](Finance_Application/Screenshots/SpendSmartEditIncome.png)
 
 ## AUTHOR
 **Bathandwa L Maphumulo**  
